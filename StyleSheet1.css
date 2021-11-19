@@ -1,0 +1,39 @@
+﻿
+:root {
+    --magnolia: rgba(234, 228, 233, 1);
+    --lightYellow: rgba(255, 241, 230, 1);
+    --lightPink: rgba(253, 226, 228, 1);
+    --strongPink: rgba(250, 210, 225, 1);
+    --lightGreen: rgba(226, 236, 233, 1);
+    --MidGreen: rgba(190, 225, 230, 1);
+    --lightGrey: rgba(240, 239, 235, 1);
+    --lightBlue: rgba(223, 231, 253, 1);
+    --StrongBlue: rgba(205, 218, 253, 1); 
+}
+
+
+h1 {
+    color: black;
+    background-color: var(--lightPink);
+    border: 1px solid lightcoral;
+}
+
+@font-face {
+    font-family: myfirstfont;
+    src: url(balbal.woff);
+}
+
+div{
+    width: 200px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 10px;
+    baclgraound-color: grey
+}
+    body {
+        background-image : linear-gradient(left, var(--lightBlue),var(--lightYellow))
+}
+
+
+
+
