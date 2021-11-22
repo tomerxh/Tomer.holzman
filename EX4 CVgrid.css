@@ -56,11 +56,14 @@ input {
 
 @media screen and (max-width: 600px) {
     .grid-container {
+        background-color: rgb(234, 228, 233);
+
         display: grid;
         grid-template-areas:
             'header'
             'left''right'
             'footer ';
+
     }
 
     div {
