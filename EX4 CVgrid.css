@@ -1,0 +1,69 @@
+body {
+    background-color: rgb(223, 231, 253);
+    box-sizing      : border-box;
+    margin: 0%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'left main  right';
+    text-align-last: center;
+}
+
+#top {
+    grid-area       : header;
+    background-color: rgb(226, 236, 233);
+    margin-bottom   : 10px;
+}
+
+#PI {
+    grid-area: left;
+}
+
+#Studys {
+    grid-area: right;
+}
+
+#Pic {
+    grid-area: main;
+}
+
+label,
+input {
+    margin: 2px;
+}
+
+
+
+@media screen and (max-width: 720px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'header header'
+            'left  right'
+            'footer footer';
+        grid-gap: 10px;
+    }
+
+    #Pic {
+        grid-area    : footer;
+        align-content: center;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'header'
+            'left''right'
+            'footer ';
+    }
+
+    div {
+        width: 100%;
+    }
+

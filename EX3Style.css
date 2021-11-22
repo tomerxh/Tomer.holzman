@@ -1,0 +1,27 @@
+body
+{
+    background-color: darkgrey;
+}
+h1{
+    color: aqua;
+}
+label{
+    text-decoration: underline;
+}
+
+Form {
+    background-color: lightgoldenrodyellow;
+    width: max-content;
+}
+
+#two{
+    background-color:lightsalmon;
+}
+
+#three {
+    background-color: lightsalmon;
+}
+
+.fisrt {
+    color: saddlebrown;
+}
