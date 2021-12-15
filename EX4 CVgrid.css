@@ -9,6 +9,7 @@ body {
     grid-template-areas:
         'header header header'
         'left main  right';
+         'footleft foot footright'
     text-align-last: center;
 }
 
@@ -24,6 +25,10 @@ body {
 
 #Studys {
     grid-area: right;
+}
+
+#submit{
+    grid-area: foot;
 }
 
 #Pic {
