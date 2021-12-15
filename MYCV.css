@@ -5,6 +5,29 @@ body {
 }
 
 
+/* header menu */
+
+.btn{
+    color: #000000;
+    background: #c0c0c0;
+    padding:10px 20px;
+    font-size:12px;
+    text-decoration:none;
+    letter-spacing:10px;
+    text-transform:uppercase;
+}
+
+.btn:hover{
+    border:none;
+    background:rgba(0, 0, 0, 0.4);
+    background:#fff;
+    padding:20px 20px;
+    color:#1b1b1b;
+}
+
+
+/*  end header menu */
+
 @font-face {
     font-family: myBestFont;
     src: url(VarelaRound-Regular.ttf);
@@ -48,7 +71,6 @@ body {
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    text-align-last: center;
 }
 
 .head { grid-area: 1 / 1 / 2 / 6; }
@@ -60,13 +82,11 @@ body {
 #top {
     position: sticky;
     background: #e0ffcd;
-    margin-bottom   : 10px;
     font-family: myBestFont;
     top: 0.01vh;
-    display: flex;
-    align-content: space-evenly;
-    justify-content: center;
     flex-flow: column wrap;
+    text-align-last: center;
+
 }
 
 .center{
@@ -77,8 +97,11 @@ body {
 }
 
 .left{
-   background: #fdffcd;
+    background: #fdffcd;
 }
+
+.foot{text-align-last: center;}
+
 
 #clickB {
     width: 20%;
