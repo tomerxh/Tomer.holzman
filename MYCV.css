@@ -1,7 +1,44 @@
 body {
-    background-color: rgb(223, 231, 253);
+    background: #ececec;
     box-sizing      : border-box;
     margin: 0%;
+}
+
+
+@font-face {
+    font-family: myBestFont;
+    src: url(VarelaRound-Regular.ttf);
+}
+
+
+.typingEffect {
+    /*animation*/
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: medium solid transparent; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 4s steps(37, end),
+    blink-caret 0.75s step-end 3.5;
+}
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 60%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: var(--gold);
+    }
 }
 
 
@@ -20,16 +57,27 @@ body {
 .center { grid-area: 2 / 2 / 5 / 5; }
 .foot { grid-area: 5 / 1 / 6 / 6; }
 
-
 #top {
-    background-color: rgb(160, 227, 248);
+    position: sticky;
+    background: #e0ffcd;
     margin-bottom   : 10px;
+    font-family: myBestFont;
+    top: 0.01vh;
+    display: flex;
+    align-content: space-evenly;
+    justify-content: center;
+    flex-flow: column wrap;
 }
 
-#maincenter{
-     background-color: rgb(224, 207, 181);
+.center{
+    background: #fdffcd;
     margin-bottom   : 10px;
     text-align-last: center;
+    font-family: myBestFont;
+}
+
+.left{
+   background: #fdffcd;
 }
 
 #clickB {
@@ -42,46 +90,4 @@ body {
     font-family: myBestFont;
 }
 
-
-
-
-label,
-input {
-    margin: 2px;
-}
-
-
-
-@media screen and (max-width: 720px) {
-    .grid-container {
-        display: grid;
-        grid-template-areas:
-            'header header'
-            'left  right'
-            'footer footer';
-        grid-gap: 10px;
-    }
-
-    #Pic {
-        grid-area    : footer;
-        align-content: center;
-    }
-}
-
-
-@media screen and (max-width: 600px) {
-    .grid-container {
-        background-color: rgb(234, 228, 233);
-
-        display: grid;
-        grid-template-areas:
-            'header'
-            'left''right'
-            'footer ';
-
-    }
-
-    div {
-        width: 100%;
-    }
 
